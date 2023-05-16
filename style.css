@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+section {
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 9px 10px 21px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 9px 10px 21px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 10px 21px -3px rgba(0,0,0,0.75);
+}
+
+section header {
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: lightyellow;
+}
+
+section ul {
+    background-color: linen;
+    height: 600px;
+}
+
+section ul li{
+    padding: 8px 20px;
+    list-style: none;
+}
+
+section ul li .items__listWrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+}
+
+section ul li .items__listWrap button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 300ms ease-in;
+}
+
+section ul li .items__listWrap button:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+section ul li .divider {
+    background-color: lightslategray;
+    width: 90%;
+    height: 1px;
+    margin: auto;
+}
+
+section footer {
+     background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    border-radius: 0 0 20px 20px;
+}
+
+section footer input {
+    width: 100%;
+    height: 32px;
+    border: none;
+    outline: none;
+    padding: 2px 15px;
+    font-size: 20px;
+}
+
+section footer button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 300ms ease-in;
+}
+
+section footer button:hover {
+    transform: scale(1.1);
+}
+
+
