@@ -1,6 +1,12 @@
 const items = document.querySelector(".items");
+const form = document.querySelector(".form");
 const input = document.querySelector(".footer__input");
 const button = document.querySelector(".footer__addBtn");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  onAdd();
+});
 
 function onAdd() {
   const text = input.value;
@@ -38,16 +44,6 @@ function createList(text) {
   id++;
   return itemsList;
 }
-
-input.addEventListener("keypress", (event) => {
-  if (event.key === "Enter") {
-    onAdd();
-  }
-});
-
-button.addEventListener("click", () => {
-  onAdd();
-});
 
 items.addEventListener("click", (event) => {
   const id = event.target.dataset.id;
